@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use App\Artist;
 class ArtistSeeder extends Seeder
 {
     /**
@@ -11,6 +11,6 @@ class ArtistSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Artist::class, 10) -> create();
     }
 }

@@ -2,11 +2,12 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\Song;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Song::class, function (Faker $faker) {
     return [
-        //
+        'name'=> $faker -> name(),
+        'date'=> $faker -> date()
     ];
 });
